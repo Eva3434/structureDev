@@ -1,0 +1,112 @@
+*{
+    --color1:rgb(49, 243, 168);
+    --color2:rgb(60, 161, 219);
+}
+body {
+    /* background-image: url(image.jpg);
+    background-repeat: no-repeat;
+    background-position: center; */
+    background-color: bisque;
+}
+/* *********************HEADER********************** */
+
+h1 {
+    color:var(--color1);
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-image: url('image.jpg');
+    background-position: center;
+    margin: 20px;
+    padding: 30px;
+    border: 5px black solid;
+    animation: color-change 2s infinite alternate; 
+    }
+    
+    @keyframes color-change{
+        0% {color: aqua;}
+        33% {color: blue;}
+        66%{color:blueviolet;}
+        100%{color: darkslateblue;}
+    }
+
+h2{
+    color:var(--color1);
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin: 20px 5px;
+    padding: 10px;
+    border: 5px black solid;
+   background-color: aliceblue;
+}
+
+/* *********************PARAGRAPHE********************** */
+
+.biographie{
+    color: var(--color2);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* *********************LISTES********************** */
+.listes {
+    border: 10px black;
+    text-align: center;
+}
+.listedes {
+    color: var(--color2);
+    margin: 50px 50px;
+    padding: 10px;
+    border: 5px;
+    list-style: none;
+}
+.listedes li {
+    margin: 10px;
+}
+.listeord {
+    color: var(--color2);
+    margin: 50px 50px;
+    padding: 10px 50px;
+    border: 5px;
+}
+.listeord li {
+    margin: 20px;
+}
+
+/* *********************TABLEAU********************** */
+.tabletete {
+    color: var(--color1);
+}
+table {
+    color: var(--color2);
+    margin: 50px 50px;
+    padding: 10px 50px;
+    border: 5px;
+       
+}
+/* *********************IMAGE********************** */
+img {
+    width: 800px;
+    height: auto;
+    text-align: center;
+}
+
+
+/* *********************FORMULAIRE********************** */
+form {
+    color:var(--color2);
+    }
+.button {
+    margin: 10px 110px;
+}
+
+/* *********************LIEN********************** */
+a {
+    text-decoration: none;
+    color: var(--color2);
+}
+a:hover {
+    color: chartreuse;
+}
