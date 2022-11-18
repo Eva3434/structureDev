@@ -29,6 +29,6 @@ SELECT nom_utilisateur, prenom_utilisateur, nom_article, qte_article, date_comma
 INNER JOIN article ON acheter.id_article = article.id_article
 INNER JOIN utilisateur ON acheter.id_utilisateur = utilisateur.id_utilisateur;
 
-SELECT nom_article, sum(qte_article) as "Quantité totale", round(sum(qte_article*prix_article),2) FROM acheter 
+SELECT nom_article, sum(qte_article) as "Quantité totale", round(sum(qte_article*prix_article),2) AS "Chiffre d'affaire" FROM acheter 
 INNER JOIN article ON acheter.id_article = article.id_article
 GROUP BY article.id_article; 

@@ -51,10 +51,6 @@ SELECT nom_article, sum(qte_article) as "Quantité totale", round(sum(qte_articl
 INNER JOIN article ON acheter.id_article = article.id_article
 GROUP BY article.id_article; 
 
-SELECT nom_utilisateur, date_contact, type_contact, message_contact FROM contact
-INNER JOIN utilisateur ON contact.id_utilisateur = utilisateur.id_utilisateur 
-INNER JOIN type_contact ON contact.id_type_contact = type_contact.id_type_contact
-ORDER BY contact.date_contact;
 
 SELECT nom_utilisateur, date_contact, nom_type_contact, message_contact FROM contact
 INNER JOIN utilisateur ON contact.id_utilisateur = utilisateur.id_utilisateur 
