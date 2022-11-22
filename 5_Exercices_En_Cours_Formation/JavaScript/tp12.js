@@ -19,7 +19,7 @@ do {
         `Veuillez choisir un calcul ci dessous: \n1-addition \n2-soustraction \n3-multiplication \n4-division `
       )
     );
-  } while (choixCalcul < 0 || choixCalcul > 4 || isNaN(choixCalcul));
+  } while (choixCalcul < 1 || choixCalcul > 4 || isNaN(choixCalcul));
 
   switch (choixCalcul) {
     case 1:
