@@ -37,7 +37,7 @@ function stop(){
 
 // CORRECTION 
 
-
+/*
 let btn = document.querySelector("button");
 let secondes = 10;
 let interval;
@@ -67,4 +67,4 @@ function decompte() {
   } else {
     document.body.innerHTML += secondes + "<br>";
   }
-}
+}*/
