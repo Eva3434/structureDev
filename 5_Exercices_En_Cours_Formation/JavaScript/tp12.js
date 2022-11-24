@@ -12,7 +12,7 @@ console.log("Tp numero 12");
 // - Affichez le résultat
 // - Proposez à l’utilisateur de recommencer
 do {
-  let choixCalcul = 0;
+  let choixCalcul;
   do {
     choixCalcul = parseInt(
       prompt(
