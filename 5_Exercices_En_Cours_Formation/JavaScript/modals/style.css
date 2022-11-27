@@ -1,0 +1,15 @@
+.mail{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 40px;
+    right: 200px;
+}
+.cookie{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+
+}
