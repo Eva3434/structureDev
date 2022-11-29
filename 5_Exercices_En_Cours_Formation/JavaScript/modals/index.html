@@ -1,39 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
+
 <body>
-    <div class="logo">
-        <img src="exemple\asset\img\cookie-modal/cookie.png" alt="" srcset="" class="cookie">
-        <img src="exemple\asset\img\newsletter-modal/mail.svg" alt="" srcset="" class="mail">
+
+    <!-- PAGE ACCUEIL -->
+    <div class="logo">  
+          <a class="ouvrirMail">
+            <img src="exemple\asset\img\newsletter-modal/mail.svg" alt="" srcset="" class="mail">
+        </a>
+        <a class="ouvrirCookie">
+            <img src="exemple\asset\img\cookie-modal/cookie.png" alt="" srcset="" class="cookie">
+        </a>
+    
+
     </div>
-
-
-    <section>
-        <img src="exemple/img/cross.svg" alt="" class="cross">
-        <h3>Rester à l'écoute des nouvelles </h3>
-
-        <p>Une news letter clair et efficace :</p>
-        <p>- Une seule par mois</p>
-        <p>- Nous ne communiquons votre addresse à personne</p>
-        <p>- Du contenus pertinent en relation avec vos préférences</p>
-    </section>
-    <label>Votre Email</label>
-    <input type="email" name="" id="">
-
-    <img src="exemple/img/newsletter-modal/news_bike.png" alt="" srcset="" class="news-bike">
-    <hr>
-    <section class="btn-valid">
-        <button class="news-valid">
-            Valider
-        </button>
-
+    <!-- PAGE VELO -->
+    <article class="modalMail">
+        <div class="contenu">
+            <header>
+                <img src="exemple/img/newsletter-modal/mail_boxes.jpg">
+            </header>
+            <div class="close">
+                <span class="material-symbols-outlined">
+                    close
+                </span>
+            </div>
+            <section>
+                <div class="titre">
+                    <p>Restez à l'écoute des nouvelles</p>
+                </div>
+                <div class="texte">
+                    <p>Une news letter clair et efficace :</p>
+                    <p>-Une seule par mois</p>
+                    <p>-Nous ne communiquons voter adresse à personne</p>
+                    <p>-Du contenus pertinent en relation avec vos préférences</p>
+                    <form action="" method="">
+                        <label for="mail">Votre Email</label>
+                        <input type="text" name="" id="mail">
+                    </form>
+                    <img src="exemple/img/newsletter-modal/news_bike.png">
+                </div>
+                <button>Valider</button>
+        </div>
+    </article>
 
     <script src="modal.js"></script>
 </body>
+
 </html>

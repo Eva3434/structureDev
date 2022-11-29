@@ -1,13 +1,30 @@
+/* *******************page accueil*******************/
+
 console.log('modal')
 
-let logo = document.querySelectorAll('img');
-let section = document.querySelectorAll('section')
+let ouvrirMail = document.querySelector('.ouvrirMail');
+let section = document.querySelectorAll('section');
 
-logo[0].addEventListener("click", function () {
-    alert('Message cookie')
-})
+// logo[0].addEventListener("click", function () {
+//     afficherMail();
+// })
 
 
-logo[1].addEventListener("click", function () {
-    alert('Message mail')
+// logo[1].addEventListener("click", function () {
+//     alert('Message mail')
+// })
+
+/* *******************page velo *******************/
+let modalMail = document.querySelector('modalMail');
+let modalCookie = document.querySelector('modalCookie');
+let close = document.querySelector('.close');
+
+function afficherMail() {    
+    modalMail.style.visibility = (modalMail.style.visibility == "visible") ? "hidden" : "visible";
+    }
+
+
+
+ouvrirMail.addEventListener("click", function(){
+    afficherMail();
 })

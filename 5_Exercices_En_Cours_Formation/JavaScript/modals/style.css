@@ -1,3 +1,5 @@
+/* *******************page accueil*******************/
+
 .mail{
     width: 100px;
     height: 100px;
@@ -13,3 +15,118 @@
     right: 10px;
 
 }
+/* *******************page velo *******************/
+
+.modalMail {
+     visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    margin: 0;
+}
+header img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;   
+    box-shadow: 0px 15px 40px grey; 
+    opacity: 0.5;
+}
+section {
+    font-family: 'Montserrat', sans-serif;
+    color: grey;
+    text-align: center;
+}
+.titre {
+    font-size: 50px;
+    text-align: center;
+    margin: 50px 0px;
+}
+.texte {
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 5px;
+    
+}
+div {
+    margin: 40px;
+}
+form {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+input {
+    width: 500px;   
+    height: 30px; 
+    border-radius: 30px;
+    border-color:rgb(199, 196, 196);
+    margin: 5px;
+}
+section img {
+    opacity: 0.5;  
+    border-bottom: 3px solid rgb(199, 196, 196);
+    padding-right: 450px;
+    padding-left: 450px;   
+}
+button {
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    width: 200px;
+    height: 70px;
+    border-color: rgb(199, 196, 196);   
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0
+  'wght' 600,
+  'GRAD' 0,
+  'opsz' 48, 
+}
+.close {
+    text-shadow: 2px 2px 4px grey;
+    color: grey;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+
+
+/* *******************page cookie*******************/
+.modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 999999;
+    align-items: center;
+    justify-content: center;
+  }

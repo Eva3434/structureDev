@@ -31,6 +31,7 @@ buttonSelector.addEventListener("click", function () {
 
 function selectionCitation() {
   let i = arrayOfQuotes[Math.floor(Math.random() * 8)];
-  p[0].textContent = i;
+  p[0].textContent = [i,0];
+  p[1].textContent = [i,1];
 };
 

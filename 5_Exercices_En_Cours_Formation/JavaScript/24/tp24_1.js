@@ -1,4 +1,4 @@
-console.log("TP 24 1")
+console.log("TP 24 1");
 
 /*
 1 l'utilisateur click sur "demarer le jeux"     OK
@@ -12,31 +12,53 @@ console.log("TP 24 1")
 9 si la valeur est identique  message affiche "prix OK*
 10 on propose à l'utilisateur de recommencer */
 
-let buttonSelector = document.querySelector('button');
+let buttonSelector = document.querySelector("button");
+let message = document.querySelector(".message");
 let nombreCache = 0;
 let textInput;
+let commencer = false;
 
-buttonSelector.innerText = "Démarer le jeux";
-
-buttonSelector.addEventListener('click', function(){
-    valeurAleatoire();    
-}); 
-
-function valeurAleatoire(){
-    nombreCache = [Math.floor(Math.random() * 1000)];
+buttonSelector.addEventListener("click", function () {
+  if (commencer == false) {
+    nombreCache = valeurAleatoire();
     console.log(nombreCache);
-  // a passer en return
-};
+    commencer = true;
+    afficherBouton();
+  } else {
+    afficher();
+    comparer();
+    afficherBouton();
+  }
+});
 
-// function afficherBouton(){
-//     if (nombreCache == undefined || nombreCache == null) {
-//             buttonSelector.innerText = "Démarer le jeux";
-//           } else {
-//             buttonSelector.innerText = "comparer la valeur";
-//           }
-// };
+function valeurAleatoire() {
+  nombreCache = [Math.floor(Math.random() * 1000)];
+  return nombreCache;
+}
 
-function afficher(){
-    textInput = document.querySelector('input').value;
-    console.log('textInput')
+function afficherBouton() {
+  if (commencer == false) {
+    buttonSelector.innerText = "Démarer le jeux";
+  } else {
+    buttonSelector.innerText = "Comparer la valeur";
+  }
+}
+
+function afficher() {
+  textInput = document.querySelector("input").value;
+  textInput = parseInt(textInput);
+  console.log(textInput);
+}
+
+function comparer() {
+  if (textInput < nombreCache) {
+    message.innerText = "C'est plus cher";
+  } else if (textInput > nombreCache) {
+    message.innerText = "C'est moins cher";
+  } else if (textInput == nombreCache) {
+    message.innerText = " C'est le juste prix !";
+    commencer = false;
+  } else {
+    message.innerText = "Veuillez saisir valeur correct";
+  }
 }
