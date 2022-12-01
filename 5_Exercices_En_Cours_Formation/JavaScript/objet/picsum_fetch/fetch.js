@@ -14,12 +14,20 @@ fetch('https://picsum.photos/v2/list?limit=4')
   .then((photos) => {
     photos.forEach(photo => {
       createElements();
-      fillElements(photo.download_url, photo.author);
+      fillElements(photo.download_url, photo.author, photo.url)
+      console.log("avan", photo.download_url)
+      photo.download_url = photo.download_url.replace(photo.width, "500")
+      photo.download_url = photo.download_url.replace(photo.height, "333")
+      console.log("apres", photo.download_url)
+      boutonCreation.addEventListener('click', function(){
+      location.href= photo.url
+        // window.open(photo.url);
+})
+;
       boutonCreation.textContent = "Visit";
       appendElements();
     });
   })
-
 
 function createElements() {
    boutonCreation = document.createElement('button');
@@ -33,7 +41,6 @@ function fillElements(photoUrl, nomAuteur) {
   console.log("hello");
   imgCreation.src = photoUrl;
   pCreation.textContent = nomAuteur;
- 
 }
 
 function appendElements() {
@@ -43,6 +50,10 @@ function appendElements() {
  articleCreation.append(boutonCreation);
 sectionCreation.append(imgCreation);
 }
+
+
+
+
 
 /*
 <section class="grid">
