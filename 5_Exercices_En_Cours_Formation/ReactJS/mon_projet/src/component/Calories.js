@@ -22,28 +22,28 @@ function Calories() {
     <section>
       <form onSubmit={handleSubmit}>
         <label name="genre">Choisir genre :</label>
-        <select name="genre">
-          <option  value={genre} onChange={(e) => setGenre(e.target.value)}>Femme</option>
-          <option  value={genre} onChange={(e) => setGenre(e.target.value)}>Homme</option>
+        <select name="genre" value={genre}>
+          <option  value={'femme'} onChange={(e) => setGenre(e.target.value)}>Femme</option>
+          <option  value={'homme'} onChange={(e) => setGenre(e.target.value)}>Homme</option>
           </select>
         {/* <input value={genre} onChange={(e) => setGenre(e.target.value)} /> */}
        
         <label name="poids">Saisir poids : </label>
-        <input value={poids} onChange={(e) => setPoids(e.target.value)} />
+        <input type= 'number' value={poids} onChange={(e) => setPoids(e.target.value)} />
         <label name="taille">Saisir taille :</label>
-        <input value={taille} onChange={(e) => setTaille(e.target.value)} />
+        <input type= 'number' value={taille} onChange={(e) => setTaille(e.target.value)} />
         <label name="age">Saisir âge :</label>
-        <input value={age} onChange={(e) => setAge(e.target.value)} />
+        <input type= 'number'value={age} onChange={(e) => setAge(e.target.value)} />
         <label name="activite">Choisir activité :</label>
         {/* <input value={activite} onChange={(e) => setActivite(e.target.value)} /> */}
-        <select name="activite" >
-          <option value={activite} onChange={(e) => setActivite(e.target.value)}> coef 1</option>
-          <option value={activite} onChange={(e) => setActivite(e.target.value)}> coef 1.2</option>
-          <option value={activite} onChange={(e) => setActivite(e.target.value)}> coef 1.4</option>
-          <option value={activite} onChange={(e) => setActivite(e.target.value)}> coef 1.6</option>
-          <option value={activite} onChange={(e) => setActivite(e.target.value)}> coef 1..7</option>
-          <option value={activite} onChange={(e) => setActivite(e.target.value)}> coef 1.9</option>
-          <option value={activite} onChange={(e) => setActivite(e.target.value)}> coef 2</option>
+        <select name="activite" value={activite} >
+          <option value={1} onChange={(e) => setActivite(e.target.value)}> coef 1</option>
+          <option value={1.2} onChange={(e) => setActivite(e.target.value)}> coef 1.2</option>
+          <option value={1.4} onChange={(e) => setActivite(e.target.value)}> coef 1.4</option>
+          <option value={1.6} onChange={(e) => setActivite(e.target.value)}> coef 1.6</option>
+          <option value={1.7} onChange={(e) => setActivite(e.target.value)}> coef 1.7</option>
+          <option value={1.9} onChange={(e) => setActivite(e.target.value)}> coef 1.9</option>
+          <option value={2} onChange={(e) => setActivite(e.target.value)}> coef 2</option>
         </select>
         <button>Envoyer</button>
       </form>
