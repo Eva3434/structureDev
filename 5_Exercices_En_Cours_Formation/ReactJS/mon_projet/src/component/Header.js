@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 
+
+
+
 function Header(){
-    return( <nav>
+    return( <nav>   
     <Link to="/Hello"><Button variant="warning"> Hello </Button> </Link>
     <Link to="/Clock"><Button variant="primary"> Clock </Button> </Link>
     <Link to="/Input"><Button variant="danger"> Input </Button> </Link>
@@ -14,7 +17,12 @@ function Header(){
     <Link to="/ToggleBouton"><Button variant="danger"> ToggleBouton </Button> </Link>
     <Link to="/DisplayGarage"><Button variant="warning"> DisplayGarage </Button> </Link>
     <Link to="/ExempleBouton" ><Button variant="primary"> ExempleBouton </Button> </Link>
-    <Link to="/Calories" ><Button variant="danger"> Calories </Button> </Link>
+    <Link to="/inputHook" ><Button variant="danger"> Change Prenom </Button> </Link>
+    <Link to="/Calories" ><Button variant="warning"> Calories </Button> </Link>
+    <Link to="/ListeTaches" ><Button variant="warning"> Liste de tâches </Button> </Link>
+    <Link to="/Deconnexion" ><Button variant="warning"> Déconnexion </Button> </Link>
+
+    
     </nav>)
 }
 
