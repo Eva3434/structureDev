@@ -20,6 +20,7 @@ function Header(){
     <Link to="/inputHook" ><Button variant="danger"> Change Prenom </Button> </Link>
     <Link to="/Calories" ><Button variant="warning"> Calories </Button> </Link>
     <Link to="/ListeTaches" ><Button variant="warning"> Liste de tâches </Button> </Link>
+    <Link to="/Todolist" ><Button variant="warning"> To Do List </Button> </Link>
     <Link to="/Deconnexion" ><Button variant="warning"> Déconnexion </Button> </Link>
 
     

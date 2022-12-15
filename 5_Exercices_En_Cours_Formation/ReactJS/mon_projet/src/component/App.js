@@ -19,6 +19,7 @@ import Calories from "./Calories";
 import Login from "./Login";
 import Deconnexion from "./Deconnexion";
 import ListeTaches from "./ListeTaches/ListeTaches";
+import Todolist from "./ToDoList/Todolist";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
           <Route exact path="/ExempleBouton" element={<ExempleBouton />} />
           <Route exact path="/Calories" element={<Calories />} />
           <Route exact path="/ListeTaches" element={<ListeTaches/>} />
+          <Route exact path="/Todolist" element={<Todolist/>} />
           <Route exact path="/Deconnexion" element={<Deconnexion />} />
         </Routes>
         </> 
