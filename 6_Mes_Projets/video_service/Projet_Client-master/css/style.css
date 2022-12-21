@@ -1,0 +1,360 @@
+*{--main-color: #00c7e0;}
+
+body{
+    margin: 0;
+    background: black;
+    color: var(--main-color);
+    /* animation: hello infinite 50s linear; */
+    overflow-x: hidden;
+    font-family: 'Bebas Neue', cursive;
+}
+
+a{
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+a:visited{
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border-bottom: solid var(--main-color);
+    height: 90px;
+    margin-top: 10px;
+}
+
+.navButton{
+    margin: 25px;
+    font-size: 35px;
+    color: var(--main-color);
+}
+
+.nav-link{
+    color: var(--main-color);
+    margin: 0px 20px;
+}
+
+.teletubbies{
+    margin-top: 32.9px;
+}
+
+.dropdown-item{
+    font-size: 25px;
+}
+
+.absolute{
+    position: absolute;
+    height: 80px;
+    margin-left: 10px;
+    top: 3px;
+}
+
+.video{
+    margin: 80px;
+}
+
+.videoContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: solid var(--main-color);
+    margin: 20px;
+}
+
+.videogalerie {
+    margin: 80px;
+    transition: transform .6s;
+}
+
+.videogalerie:hover{
+    transform: scale(1.1);
+}
+
+.presentation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.floflo{
+    height: 400px;
+    margin: 90px;
+}
+
+.text{
+    width: 1000px;
+    font-size: 25px;
+    flex-direction: column;
+}
+
+
+.polaroidContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.polaroid, p {
+    width: 500px;
+    justify-content: flex-end;
+    margin: 30px 90px;
+    font-size: 20px;
+}
+
+.reseaux{
+    display: flex;
+    justify-content: center;
+    border-top: solid var(--main-color);
+    margin-right: 350px;
+    margin-left: 350px;
+}
+
+.icons{
+    margin: 40px 60px 40px 60px;
+    height: 80px;
+    transition: transform .5s;
+}
+
+.icons:hover{
+    transform: scale(1.1);
+}
+
+.photos{
+    height: 400px;
+    transition: transform .6s;
+}
+
+.photos:hover{
+    transform: scale(1.1);
+
+}
+
+.polaroid{
+    height: 400px;
+    transition: transform .6s;
+}
+
+.polaroid:hover{
+    transform: scale(1.1);
+}
+
+@keyframes hello {
+    from {
+        transform: translatex(1900px);
+      }
+      to {
+        transform: translateX(-1900px);
+      }
+}
+
+.galerie{
+    margin: 50px 0px 50px 0px;
+}
+
+.contact{
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+}
+
+input{
+    border: 0px;
+    border-radius: 10px;
+    outline: none;
+    height: 35px;
+}
+
+form{
+    margin: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: solid var(--main-color);
+    width: 60%;
+    margin: auto;
+    margin-top: 110px;
+    margin-bottom: 150px;
+}
+
+label{
+    display: flex;
+    color: white;
+    margin-left: 10px;
+}
+
+.message{
+    height: 150px;
+    padding-top: 10px;
+}
+
+button{
+    align-self: center;
+    border-radius: 5px;
+    width: 100px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+textarea{
+    border: none;
+    border-radius: 5px;
+    resize: none;
+    outline: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.videosGal{
+    text-align: center;
+}
+
+h2{
+    font-size: 55px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.navbar-toggler-icon{
+    filter: invert();
+    justify-content: flex-end;
+}
+
+.nav-link:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.photosGal{
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+
+@media (max-width: 1081px) {
+    
+    .navbar{
+        border: none;
+    }
+
+    .video{
+        margin-top: 200px;
+        width: 80%;
+        height: auto;
+        margin: 10px;
+    }
+
+    .videogalerie {
+        margin-top: 200px;
+        width: 80%;
+        height: auto;
+        margin: 10px;
+    }
+
+    .presentation{
+        flex-direction: column;
+    }
+
+    .text{
+        width: 80%;
+    }
+
+    .polaroidContainer{
+        flex-direction: column;
+    }
+
+    .polaroid{
+        width: 70%;
+        margin: 20px;
+        object-fit: contain;
+        align-self: center;
+    }
+
+    .navButton{
+        font-size: 45px;
+    }
+
+    .galerie{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .photos{
+        object-fit: contain;
+        width: 80%;
+        height: 80%;
+        margin: 10px;
+    }
+
+    form{
+        margin: 0;
+        width: 90%;
+        margin: 20px;
+    }
+
+    label{
+        font-size: 35px;
+    }
+
+    input{
+        width: 90%;
+    }
+
+    ::placeholder{
+        font-size: 30px;
+    }
+
+    .contact{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .formButton{
+        height: 50px;
+        width: 200px;
+    }
+
+    .message{
+        width: 90%;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .floflo{
+        object-fit: contain;
+        width: 60%;
+        margin: 20px;
+    }
+
+    .reseaux{
+        width: 100%;
+        margin: 0;
+    }
+
+    .icons{
+        width: 60%;
+        margin: 0;
+        object-fit: contain;
+    }
+
+    .aaa{
+        margin-left: 10%;
+    }
+
+    li.nav-item {
+        background: rgb(36, 36, 36) !important;
+    }
+    .polaroid, p {
+        width: 80%;        
+        margin: 2% 10% 5% 10%;       
+        text-align: justify;
+    }
+}

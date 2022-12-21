@@ -29,7 +29,6 @@ const Todolist = () => {
             type: over.id
           };
         }
-
         return item;
       })
     );
