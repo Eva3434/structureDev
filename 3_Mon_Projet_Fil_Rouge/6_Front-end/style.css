@@ -1,0 +1,25 @@
+* {
+    margin: 0px;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(240, 213, 190);
+    align-items: center;
+}
+nav a {    
+    justify-content: center;    
+    gap: 20px;    
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.logoNav {
+    align-self: flex-start;
+    height: 100px;    
+}
+.imageFond {
+    width: 100%;
+    height: 500px;
+    object-fit:cover;
+    filter: opacity(50%);
+}
