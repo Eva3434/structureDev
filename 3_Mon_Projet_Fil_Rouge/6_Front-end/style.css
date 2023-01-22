@@ -12,13 +12,17 @@ nav{
     display: flex;
     background-color: var(--navColor);
     justify-content: space-evenly;  
-    align-items: center;
-    color: var(--white);      
+    align-items: center;        
     font-size: 20px;
+}
+nav > a {
+    text-decoration: none;
+    color: var(--white);  
 }
 .logoNav {
     align-self: flex-start;
     height: 100px;    
+    z-index: 4;
 }
 /********************HEADER************************/
 .headerImage{
@@ -41,6 +45,34 @@ nav{
 .texteHeader{
     z-index: 3;
 }
+
+/***********************FOOTER************************/
+footer{
+    background-color: var(--navColor);
+}
+.footer{
+    color: var(--jaune);
+    text-align: center;
+    font-size: 15px;    
+    margin-bottom: 2%;
+}
+.mentionsLegales{
+    color:black;
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 2%;
+}
+.icones{
+    width:3%;
+    height: 3%;
+    color: var(--jauneClair);
+    margin: 0% 2%; 
+}
+.sectionIcones{
+    text-align: center;
+    padding: 1%;
+}
+/***********************************************PAGE ACCUEIL**************************************************/
 /********************NOS PRODUITS***********************/
 .nosProduitsTitre{
     text-align: center;
@@ -88,29 +120,97 @@ nav{
     height: 100%;
     object-fit: contain;
 }
-/***********************FOOTER************************/
-footer{
-    background-color: var(--navColor);
+
+/***********************************************PAGE BOUTIQUE**************************************************/
+
+
+/********************CATEGORIES*********************/
+.boutiqueCategories{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
 }
-.footer{
-    color: var(--jaune);
+.boutiqueCategories > a{
+    text-decoration: none;
+    margin: 3%;
+    padding: 3%;
     text-align: center;
-    font-size: 15px;    
-    margin-bottom: 2%;
+    border-radius: 5px; 
+    background-color: var(--jauneClair);
+    color: black;  
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 1px 5px 5px gray;
 }
-.mentionsLegales{
-    color:black;
+/********************PRODUITS*********************/
+.boutiqueProduits{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+}
+.boutiqueProduits > article {
+    padding: 5%;
+    margin: 5% 5%;
+    border-radius: 5px;
+    background-color: var(--jaunepale);
     text-align: center;
-    font-size: 15px;
-    padding-bottom: 2%;
+    font-weight: bold;
 }
-.icones{
-    width:3%;
-    height: 3%;
-    color: var(--jauneClair);
-    margin: 0% 2%; 
+.imgBoutique{
+    width: 60%;
+    height: 70%;
+    object-fit: contain;
 }
-.sectionIcones{
+.ajouter{
+    background-color: var(--jauneClair);
+    box-shadow: 1px 5px 5px gray;
+    margin: 3%;
+    padding: 3%;
+    color: var(--white);
+    font-weight: bold;
+    border-radius: 5px;
+}
+/***********************************************PAGE GALERIE**************************************************/
+
+
+/********************DECOUVREZ*********************/
+.decouvrez{
+    background-color: var(--jaune);
+    padding: 5%;
     text-align: center;
-    padding: 1%;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+/********************PHOTOS*********************/
+.photosGalerie{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: var(--jauneClair);
+    margin: 0% 15%;    
+}
+.photosGalerie > img{
+    width: 250px;
+    height: 200px;
+    object-fit: fill;
+    margin: 5%;
+}
+
+
+/***********************************************PAGE NOTRE HISTOIRE**************************************************/
+
+
+/********************1ERE PARTIE*********************/
+.qsnTextHaut{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 10%;
+}
+.qsnTextHaut > img{
+    width: 500px;
+    height: 300px;
+}
+/********************2ND PARTIE*********************/
+.qsnTextBas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 10%;
 }
