@@ -1,0 +1,144 @@
+/*************************MISE EN PLACE******************/
+* {
+    --color1: rgb(148, 17, 17);
+    --color2: white;
+    --color3: black;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    background-color: rgb(224, 222, 222);
+}
+/*************************NAV BARRE******************/
+header {
+    background-color: var(--color1);
+    color: var(--color2);
+    font-size: 20px;
+    padding-bottom: 1%;
+}
+nav {   
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;    
+    gap: 2%;
+}
+.navLigne {
+    display: flex;
+    justify-content: center;
+    gap: 25%;
+    margin-left: 45%;
+}
+.navColonne {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;  
+    padding-right: 5%;   
+}
+/*************************TITRE******************/
+h1 {    
+    color: var(--color3);
+    text-align: center;
+    padding: 1%;
+    rotate: 0%;
+    
+}
+/* .shape {
+    width: 7.5%;
+    height: 5%;
+    transform: skew(-20deg) rotate(-2deg);
+    background: var(--color1);
+    position: absolute;
+    left: 54.5%;
+    top: 13%;
+    z-index: -1;
+} */
+span {
+    background-color: var(--color1);
+    transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    display: inline-block;
+}
+h2 {
+    text-align: center;
+    background-color: var(--color1);
+    font-size: 60px;
+    margin: 0px;
+    color: var(--color2);    
+}
+.titre2 {
+    padding-top: 3%;
+}
+/*************************CORPS******************/
+section {
+    display: grid;    
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;      
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+.derniereImg {
+    width: 200%;
+    padding: 0px;
+}
+p {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
+section div {
+    padding: 30% 10%;
+}
+.fondNoir {
+    background-color: var(--color3);
+    color: var(--color2);
+    padding-top: 50%;
+}
+.ligneEtroite {
+    padding:0% 25%;
+}
+.vide {
+    padding: 0px;
+}
+
+/*************************RESPONSIVE******************/
+@media (max-width: 992px) {
+    .navLigne {
+        margin-left: 10%;
+        font-size: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        line-height: 170%;
+    }
+    .navColonne {
+        margin:0%;
+        font-size: 100%;
+    }
+    h1{
+        margin: 0% 10%;
+        font-size: 130%;
+    }
+    .shape {
+    width: 22.5%;
+    height: 3%;
+    transform: skew(-20deg) rotate(-2deg);
+    background: var(--color1);
+    position: absolute;
+    left: 64%;
+    top: 9.5%;
+    z-index: -1;
+    }
+    h2{
+        font-size: 170%;
+    }
+    img {
+        object-fit: cover;
+    }
+}

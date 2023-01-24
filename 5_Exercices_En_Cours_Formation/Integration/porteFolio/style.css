@@ -1,0 +1,373 @@
+/* **************************MISE EN PLACE****************************** */
+
+* {
+    --couleurFond1: wheat;
+    --couleurFond2: rgb(235, 231, 231);
+    --couleurTexte1: black;
+    --couleurTexte2: rgb(70, 68, 68);
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+}
+
+#flecheScroll {
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    bottom: 50px;
+    right: 40px;
+  }
+  #flecheScroll img {
+    width: 50px;
+  }
+  @media screen and (max-width: 992px) {
+    #flecheScroll img {
+        display:none;
+    }
+  }
+
+/* **************************BARRE DE NAVIGATION*********************** */
+nav {
+    background-color: var(--couleurFond1);
+    color: var(--couleurTexte1);
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    box-shadow: 8px 8px 10px grey;
+}
+
+a {
+    text-decoration: none;
+    color: var(--couleurTexte1);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 100%;
+}
+nav a:hover{
+    font-size: 150%;
+    }
+    
+@media (max-width: 600px) {
+    nav {
+        padding: 30px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+}
+
+/* **************************TITRES****************************** */
+h1 {
+    font-size: 20px;
+    color: var(--couleurTexte2);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    padding: 2%;
+}
+
+h2 {
+    font-size: 160%;
+    color: var(--couleurTexte1);
+    text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+    h2 {
+        font-size: 150%;
+    }
+}
+h3 {
+    font-size: 180%;
+    color: var(--couleurTexte1);
+    text-align: center;
+    margin: 5%;
+}
+
+@media screen and (max-width: 992px) {
+    h3 {
+        font-size: 150%;
+    }
+}
+
+/* **************************EXPEREIENCES****************************** */
+.expPro {
+    background-color: var(--couleurFond2);
+    border: 3px solid var(--couleurFond1);
+    border-radius: 30px;
+    margin: 0px 300px 30px 300px;
+}
+
+.entreprise {
+    font-size: 20px;
+    color: var(--couleurTexte2);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-top: 1%;
+}
+
+.date {
+    font-size: 20px;
+    color: var(--couleurTexte2);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.poste {
+    font-size: 20px;
+    color: var(--couleurTexte2);
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 1%;
+    margin: 0% 35%;
+    border-bottom: 1px solid;
+    font-weight: bold;
+}
+@media screen and (max-width: 1250px) {
+      .poste {
+        margin: 0% 30%;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .expPro {
+        margin: 30px 40px;
+    }
+
+    .poste {
+        margin: 0% 30%;
+    }
+}
+
+/* **************************FORMATION ********************************** */
+.Form {
+    border: 3px solid var(--couleurFond1);
+    border-radius: 30px;
+    margin: 30px 300px;
+}
+
+.dateD {
+    font-size: 20px;
+    color: var(--couleurTexte2);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-top: 1%;
+}
+
+.centreF {
+    font-size: 20px;
+    color: var(--couleurTexte2);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.diplome {
+    font-size: 20px;
+    color: var(--couleurTexte2);
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 1%;
+    margin: 0% 30%;
+    border-bottom: 1px solid;
+    font-weight: bold;
+}
+
+section {
+    margin: 0px 20px;
+}
+
+@media screen and (max-width: 992px) {
+    .Form {
+        margin: 30px 40px;
+    }
+
+    .diplome {
+        margin: 0% 15%;
+    }
+}
+
+/* **************************COMPETENCES****************************** */
+.comp img {
+    clip-path: ellipse(50% 50%);
+    object-fit: cover;
+    width: 15%;
+    height: 15%;
+    display: block;
+    margin: 1% auto;
+
+}
+
+.comp {
+    background-color: var(--couleurFond2);
+    border: 3px solid var(--couleurFond1);
+    border-radius: 30px;
+    margin: 30px 300px;
+}
+
+.nomComp {
+    font-size: 20px;
+    color: var(--couleurTexte2);
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-top: 3%;
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+
+.textComp {
+    font-size: 20px;
+    color: var(--couleurTexte2);
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 3%;
+    margin: 0% 5%;
+    border-bottom: 1px solid;
+    text-align: justify;
+
+}
+
+@media screen and (max-width: 992px) {
+    .comp {
+        margin: 30px 40px;
+    }
+
+    .textComp {
+        margin: 0% 15%;
+    }
+
+    img {
+        width: 40%;
+    }
+}
+
+/* **************************FOOTER ************************************ */
+footer {
+    background-color: var(--couleurFond1);
+    color: var(--couleurTexte1);
+    font-size: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 2%;
+    margin-top: 2%;    
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: center; 
+    gap: 40px;    
+}
+@media screen and (max-width: 992px) {
+    footer {
+        font-size: 80%;
+    }
+}
+
+/* **************************FORMULAIRE************************************ */
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--couleurFond2);
+    border: 3px solid var(--couleurFond1);
+    border-radius: 30px;
+    padding: 3% 10%;
+    margin: 1% 20% 10% 20%;
+}
+
+input {
+    width: 90%;
+    height: 30px;
+    border: none;
+    border-radius: 30px;
+}
+
+label {
+    font-size: 25px;
+    margin: 5px;
+}
+
+form p {
+    font-size: 25px;
+}
+
+button {
+    margin-top: 20px;
+    height: 30px;
+    width: 150px;
+    font-size: 15px;
+    border-radius: 10px;
+}
+button:hover {
+    background-color: var(--couleurFond1);
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 8px 8px 0px grey;
+}
+textarea {
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+}
+
+@media screen and (max-width: 992px) {
+    form {
+        margin: 30px 10px 40px 10px;
+
+    }
+
+    label {
+        font-size: 25px;
+        margin: 5px;
+    }
+
+    form p {
+        font-size: 25px;
+    }
+
+    input {
+        width: 100%;
+        height: 30px;
+    }
+
+    button {
+        margin: 40px 0px;
+        height: 40px;
+        width: 100px;
+        font-size: 20px;
+    }
+
+}
+
+/* **************************PORTE FOLIO************************************ */
+.porteF img {
+    height: auto;
+    width: 20%;
+    margin: 20px;
+    transition: transform .1s;
+    box-shadow: 8px 8px 10px grey;
+}
+.porteF img:hover{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5);
+    }
+
+.porteF {
+    background-color: var(--couleurFond2);
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+    border: 3px solid var(--couleurFond1);
+    margin-bottom: 10%;
+}
+
+@media screen and (max-width: 992px) {
+    .porteF {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .porteF img {
+        height: auto;
+        width: 60%;
+    }
+}

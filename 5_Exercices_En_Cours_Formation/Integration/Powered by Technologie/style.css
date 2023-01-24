@@ -1,0 +1,110 @@
+/*************************MISE EN PLACE*************************/
+* {
+    ---colorFond : white;
+    --colorTexte :  rgb(71, 71, 71);
+    --colorTexte2 : gray;
+}
+body {
+    background-color: rgb(240, 238, 238);
+    margin: 0%;  
+    color: var(--colorTexte2); 
+    font-family:'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;; 
+}
+
+
+/******************************TITRES*************************/
+h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 1%;    
+}
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0%;
+    color: var(--colorTexte);
+}
+.intro {
+    font-size: 20px;
+    text-align: center;
+    margin: 0% 30%;
+}
+.enTete {
+    margin:5%;
+}
+h3 {
+    color: var(--colorTexte);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/******************************GRILLE*************************/
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);    
+    grid-template-areas:
+    ". rouge ." 
+    "vert rouge bleu"
+    "vert jaune bleu"
+    ". jaune .";    
+    gap: 5%;
+    margin: 0% 10% 10% 10%;    
+}
+.item:nth-child(1) {
+   grid-area: vert;
+   text-align: left;   
+   border-radius: 10px;
+   box-shadow: 2px 5px 20px grey;
+   border-top: 4px solid rgb(106, 190, 190);
+   padding: 5% 10% 30% 10%;
+   background: url(icones/icon-supervisor.svg) no-repeat  var(---colorFond);
+   background-position: 90% 90%;
+}
+.item:nth-child(2) {
+    grid-area: rouge;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 2px 5px 20px grey;
+    border-top: 4px solid rgb(226, 59, 87);
+    padding: 5% 10% 30% 10%;
+    background: url(icones/icon-team-builder.svg) no-repeat  var(---colorFond);
+    background-position: 90% 90%;
+}
+.item:nth-child(3) {
+    grid-area: jaune;
+    text-align: left;   
+    border-radius: 10px;
+    box-shadow: 2px 5px 20px grey;
+    border-top: 4px solid rgb(255, 187, 0);
+    padding: 5% 10% 30% 10%;
+    background: url(icones/icon-karma.svg) no-repeat  var(---colorFond);
+    background-position: 90% 90%;
+}
+.item:nth-child(4) {
+    grid-area: bleu;
+    text-align: left;   
+    border-radius: 10px;
+    box-shadow: 2px 5px 20px grey;
+    border-top: 4px solid rgb(59, 141, 218);
+    padding: 5% 10% 30% 10%;
+    background: url(icones/icon-calculator.svg) no-repeat  var(---colorFond);
+    background-position: 90% 90%;
+    
+}
+/******************************RESPONSIVE*************************/
+@media (max-width: 992px) {
+    .grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }    
+    .intro {
+        margin: 2%;        
+    }
+}

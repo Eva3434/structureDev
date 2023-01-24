@@ -1,0 +1,220 @@
+
+/* ********************NAV BARRE******************** */
+nav {
+    color:white;
+    background-color: rgb(222, 184, 135);
+    font-size: 20px;
+    padding: 20px;
+    box-shadow: 8px 8px 50px rgb(44, 40, 40);    
+}
+.listeNav {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    justify-content: flex-end;       
+}   
+
+/* ********************TITRE******************** */
+h1 {
+    color: rgb(73,28,28);
+    font-size: 30px;    
+    text-align: center;
+}
+.titre {
+    padding: 20px;
+}
+
+/* ********************IMAGES******************** */
+
+hr {
+    border-color: rgb(73,28,28);
+    width: 50%;
+}
+
+.contour {
+    display: flex;    
+    justify-content: center;
+    padding: 30px;
+    background-color: rgb(222, 184, 135);
+    border-radius: 30px;  
+    margin: 0px 300px;
+}
+.contour h2 {
+    color :rgb(73,28,28);
+    font-size: 20px;
+    text-align: center;
+}
+.contour p {
+    color :rgb(73,28,28);
+    font-size: 15px;
+    text-align: center;   
+    padding: 5px;    
+}
+
+img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+}
+p {
+    width: 250px;
+    text-align: center;
+}
+.image1 {
+    background-color: rgb(255, 235, 205);
+    padding: 20px 30px;
+    border-radius: 30px;
+    box-shadow: 8px 8px 20px rgb(44, 40, 40);       
+}
+.image2 {
+    background-color: rgb(255, 235, 205);
+    padding: 20px 40px;
+    border-radius: 30px;
+    box-shadow: 8px 8px 20px rgb(44, 40, 40);
+    margin-left: 2%;  
+    margin-right: 2%;
+}
+.image3 {
+    background-color: rgb(255, 235, 205);
+    padding: 20px 40px;
+    border-radius: 30px;
+    box-shadow: 8px 8px 20px rgb(44, 40, 40);    
+}
+
+
+/* ********************FOOTER******************** */
+footer {
+    color:white;
+    background-color: rgb(222, 184, 135);
+    font-size: 20px;
+    padding: 15px;
+    margin-top: 100px;  
+    align-self: center;   
+}
+.retour {
+    text-decoration: none;
+}
+.listeFoot {
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: center; 
+    gap: 40px;     
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.basPage {
+    display: flex;
+    justify-content: center;
+}
+
+
+    
+
+/* ********************PAGE 2 ******************** */
+
+.titreP2 {
+    color: rgb(73,28,28);
+    font-size: 30px;    
+    text-align: center;
+    padding: 20px;
+}
+.galerie {
+    padding: 30px;
+    background-color: rgb(222, 184, 135);
+    border-radius: 30px;  
+    margin: 0px 400px;   
+}
+img {
+    border-radius: 2px;
+}
+.ligne1 {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding-bottom: 10px;
+}
+.ligne2 {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding-bottom: 10px;
+}
+.ligne3 {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ********************PAGE 3 ******************** */
+.titreP3 {
+    color: rgb(73,28,28);
+    font-size: 30px;    
+    text-align: center;
+    padding: 20px;
+}
+
+.tour{
+    
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 30px 50px;
+    background-color: rgb(222, 184, 135);
+    border-radius: 30px;    
+    margin: 0px 300px;
+}
+.form {
+    background-color: rgb(255, 235, 205);
+    border-radius: 30px; 
+    box-shadow: 8px 8px 20px rgb(44, 40, 40);
+    font-size: 15px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 5%;
+    color: rgb(73,28,28);
+    font-size: 20px;
+    padding: 20px 50px;   
+}
+input {
+    width: 800px;
+    height: 30px;
+    border: none;
+    border-radius: 30px ;    
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;         
+}
+
+textarea {
+    border: none;
+    border-radius: 30px ;
+    resize: none;    
+}
+button {
+    margin: 15px;
+}

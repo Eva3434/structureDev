@@ -1,0 +1,39 @@
+body {
+    margin: 0px;
+     background-image: url(./background.webp);        
+    font-family: 'Courier New', Courier, monospace; 
+}
+section {
+    margin:  10% 30%;
+    padding : 30px;
+    display: flex;     
+    justify-content: center;
+    align-content: center;
+    background-color: rgba(255, 255, 255, 0.781);   
+    flex-direction: column;
+    border-radius: 30px;
+}
+label{
+    margin: 10%;
+}
+input{
+    background-color: rgb(233, 223, 223);
+    
+}
+button{
+    margin: 10%;
+    border-radius: 30px;
+    height:30px;
+}
+p{
+    margin: 10%;
+    font-weight: bold;
+}
+.temperature {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+.temps {
+    font-size: 15px;
+}

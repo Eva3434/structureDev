@@ -1,0 +1,45 @@
+* {
+    margin: 0px;
+}
+
+body {
+    background-image:url(image/image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    line-height: 300%;
+}
+
+.cadre {
+    background-color: white;
+    border: dashed 5px rgb(226, 130, 218);
+    font-family: 'Dancing Script', cursive;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    width: 500px;
+    margin: 10% 10% 0% 10%;
+    padding: 2%;
+    text-align: center;
+    opacity: 90%;
+    font-family: 'Space Mono', monospace;
+    font-family: 'Tourney', cursive;    
+}
+
+input {    
+    height: 50px;
+    width: 300px;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+#textInput {
+    background-color: white;
+}
+button {
+    height: 40px;
+   width : 300px;
+}
