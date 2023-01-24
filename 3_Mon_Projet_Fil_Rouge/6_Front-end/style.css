@@ -7,6 +7,9 @@
     --jauneClair:rgba(244, 175, 46, 0.59);
     font-family: 'Raleway', sans-serif;
 }
+body{
+    position: relative;
+}
 /********************NAVBAR**************************/
 nav a {    
     justify-content: center;    
@@ -232,9 +235,36 @@ footer{
 }
 
 /**********************************************MODAL CONNEXION **************************************************/
-:modal {
-    border: 5px solid red;
-    background-color: yellow;
-    box-shadow: 3px 3px 10px rgba(0 0 0 / 0.5);
+.d-none {
+    display: none;
+}
+.modalBack{
+    position: absolute;
+    background-color: black;
+    opacity: 0.2;
+    width: 100vw;
+    height: 100%;
+    z-index: 11;
+    margin: 0%;
+    padding: 0%;
+} 
+.modal-template {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--jaune);
+    width: 50%;
+    padding: 5%;
+    z-index: 11;
+    font-size: 20px;
+}
+.titreModal{
+    font-weight: bold;
+    font-size: 30px;
+    padding: 5%;
+}
+.croix {
+    height: 30px;
 }
   
