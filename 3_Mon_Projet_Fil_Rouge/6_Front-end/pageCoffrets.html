@@ -15,6 +15,21 @@
     <title>Rucher de l'Estagnol - Coffrets Cadeaux</title>
   </head>
   <body>
+    <!------------------------MODAL---------------------->
+    <div id="back"></div>
+    <section class="d-none" id="modal">
+      <img src="./images/cross.svg" alt="" class="croix" />
+      <div class="titreModal">CONNEXION</div>
+      <form class="formModal">
+        <label>E-mail :</label>
+        <input type="text" name="emailConnexion" />
+        <label>Mot de passe :</label>
+        <input type="text" name="motDePasseConnexion" />
+        <button value="Connexion" class="boutonModal">Connexion</button>
+      </form>
+    </section>
+
+    <!------------------------NAV---------------------->
     <header>
       <nav>
         <a href="index.html">Accueil</a>
@@ -23,22 +38,21 @@
         <a class="logo"><img src="images/logo.png" class="logoNav" /></a>
         <a href="pageNotreHistoire.html">Notre Histoire</a>
         <a href="pageContact.html">Contact</a>
-        <a>Connexion</a>
+        <button class="boutonConnexion">Connexion</button>
       </nav>
+
+      <!----------------------SLIDE-------------------->
       <section class="slide">
         <div class="titres">
           <div class="Boutique">Boutique</div>
         </div>
       </section>
-    </header>    
-    <section>
-     
-      
-    </section>
+    </header>
 
+    <!------------------------CORPS---------------------->
+    <section></section>
 
-
-    
+    <!----------------------FOOTER-------------------->
     <footer>
       <section class="sectionIcones">
         <img src="images/icons8-facebook.svg" class="icones" />
@@ -57,5 +71,7 @@
         Politique de confidentialité | Politique des cookies | Plan du site
       </div>
     </footer>
+    <script src="pageAccueil.js"></script>
+    <script src="modal.js"></script>
   </body>
 </html>

@@ -15,6 +15,21 @@
     <title>Rucher de l'Estagnol - Notre Histoire</title>
   </head>
   <body>
+    <!------------------------MODAL---------------------->
+    <div id="back"></div>
+    <section class="d-none" id="modal">
+      <img src="./images/cross.svg" alt="" class="croix" />
+      <div class="titreModal">CONNEXION</div>
+      <form class="formModal">
+        <label>E-mail :</label>
+        <input type="text" name="emailConnexion" />
+        <label>Mot de passe :</label>
+        <input type="text" name="motDePasseConnexion" />
+        <button value="Connexion" class="boutonModal">Connexion</button>
+      </form>
+    </section>
+
+    <!------------------------NAV---------------------->
     <header>
       <nav>
         <a href="index.html">Accueil</a>
@@ -23,20 +38,24 @@
         <a class="logo"><img src="images/logo.png" class="logoNav" /></a>
         <a href="pageNotreHistoire.html">Notre Histoire</a>
         <a href="pageContact.html">Contact</a>
-        <a>Connexion</a>
+        <button class="boutonConnexion">Connexion</button>
       </nav>
+
+      <!----------------------SLIDE-------------------->
       <section class="slide">
         <div class="titres">
-          <div class="qsn">Qiu sommes nous ?</div>
+          <div class="qsn">Qui sommes nous ?</div>
         </div>
       </section>
     </header>
-    <div>Quelques mots sur nous et notre activité</div>
+
+    <!------------------------CORPS---------------------->
+    <div class="quelquesMots">Quelques mots sur nous et notre activité</div>
     <section class="qsnTextHaut">
       <img src="images/imageFond.jpg" />
       <div>
-        <p>Présentation</p>
-        <p>
+        <p class="titrePresentation">Présentation</p>
+        <p class="textePresentation">
           There are many variations of passages of Lorem Ipsum available, but
           the majority have suffered alteration in some form, by injected
           humour, or randomised words which don't look even slightly believable.
@@ -52,7 +71,7 @@
     </section>
     <section class="qsnTextBas">
       <div>
-        <p>TITRE</p>
+        <p class="titreBasPresentation">TITRE</p>
         <p>
           There are many variations of passages of Lorem Ipsum available, but
           the majority have suffered alteration in some form, by injected
@@ -65,7 +84,7 @@
         </p>
       </div>
       <div>
-        <p>TITRE</p>
+        <p class="titreBasPresentation">TITRE</p>
         <p>
           There are many variations of passages of Lorem Ipsum available, but
           the majority have suffered alteration in some form, by injected
@@ -78,7 +97,7 @@
         </p>
       </div>
       <div>
-        <p>TITRE</p>
+        <p class="titreBasPresentation">TITRE</p>
         <p>
           There are many variations of passages of Lorem Ipsum available, but
           the majority have suffered alteration in some form, by injected
@@ -98,6 +117,8 @@
         <img src="images/icons8-instagram.svg" class="icones" />
         <img src="images/icons8-logo-google.svg" class="icones" />
       </section>
+
+      <!----------------------FOOTER-------------------->
       <section class="footer">
         <div>RUCHER DE L'ESTAGNOL - Chemin du Tourtourel - 34570 SAUSSAN</div>
         <div>Ouvert de 10h00 à 19h00 du lundi au samedi</div>
@@ -110,5 +131,7 @@
         Politique de confidentialité | Politique des cookies | Plan du site
       </div>
     </footer>
+    <script src="pageAccueil.js"></script>
+    <script src="modal.js"></script>
   </body>
 </html>

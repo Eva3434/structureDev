@@ -15,7 +15,23 @@
     <title>Rucher de l'Estagnol</title>
   </head>
   <body>
-    <header>      
+    
+    <!------------------------MODAL---------------------->
+    <div id="back"></div>
+    <section class="d-none" id="modal">
+      <img src="./images/cross.svg" alt="" class="croix" />
+      <div class="titreModal">CONNEXION</div>
+      <form class="formModal">
+        <label>E-mail :</label>
+        <input type="text" name="emailConnexion" />
+        <label>Mot de passe :</label>
+        <input type="text" name="motDePasseConnexion" />
+        <button value="Connexion" class="boutonModal">Connexion</button>
+      </form>
+    </section>
+
+    <!------------------------NAV---------------------->
+    <header>
       <nav>
         <a href="index.html">Accueil</a>
         <a href="pageBoutique.html">Boutique</a>
@@ -25,19 +41,8 @@
         <a href="pageContact.html">Contact</a>
         <button class="boutonConnexion">Connexion</button>
       </nav>
-      <div id="back"></div>
-      <section class="d-none" id="modal">
-        
-        <img src="./images/cross.svg" alt="" class="croix">
-        <div class="titreModal">CONNEXION</div>
-        <form class="formModal">
-          <label>E-mail :</label>
-          <input type="text"name="emailConnexion">
-          <label>Mot de passe :</label>
-          <input type="text"name="motDePasseConnexion">
-          <input type="submit" value="Connexion">
-        </form>  
-      </section>
+
+      <!----------------------SLIDE-------------------->
       <section class="slide">
         <div class="titres">
           <h1>Rucher de l'Estagnol</h1>
@@ -45,6 +50,8 @@
         </div>
       </section>
     </header>
+
+    <!------------------------CORPS---------------------->
     <section>
       <div class="nosProduitsTitre">Nos produits</div>
       <section class="nosProduitsGrid">
@@ -68,15 +75,59 @@
     <div class="nosProduitsTitre">Notre Activité</div>
     <section class="notreActivite">
       <img src="images/imageFond.jpg" class="imgNotreActivite" />
-      <div>La miellerie</div>
-      <div>L'apiculture</div>
+      <section>
+      <div class="titreGridPageAcc">La miellerie</div>
+        <p class="texteGridPageAcc">
+          There are many variations of passages of Lorem Ipsum available, but
+          the majority have suffered alteration in some form, by injected
+          humour, or randomised words which don't look even slightly believable.
+          If you are going to use a passage of Lorem Ipsum, you need to be sure
+          there isn't anything embarrassing hidden in the middle of text. All
+          the Lorem Ipsum generators on the Internet tend to repeat predefined
+          chunks as necessary, making this the first true generator on the
+          Internet. It uses a dictionary of over 200 Latin words, combined with
+          a handful of model sentence structures, to generate Lorem Ipsum which
+          looks reasonable.
+        </p>
+      </section>
+      <section  class="effetJS">
+        <div class="titreGridPageAcc">L'apiculture</div>
+        <p class="texteGridPageAcc">
+          There are many variations of passages of Lorem Ipsum available, but
+          the majority have suffered alteration in some form, by injected
+          humour, or randomised words which don't look even slightly believable.
+          If you are going to use a passage of Lorem Ipsum, you need to be sure
+          there isn't anything embarrassing hidden in the middle of text. All
+          the Lorem Ipsum generators on the Internet tend to repeat predefined
+          chunks as necessary, making this the first true generator on the
+          Internet. It uses a dictionary of over 200 Latin words, combined with
+          a handful of model sentence structures, to generate Lorem Ipsum which
+          looks reasonable.
+        </p>
+      </section>
       <img
         src="images/beekeeper-gc599b6945_1920.jpg"
         class="imgNotreActivite"
       />
       <img src="images/honey-gdeb79c4ff_1920.jpg" class="imgNotreActivite" />
-      <div>L'apithérapie</div>
+      <section>
+        <div class="titreGridPageAcc">L'apithérapie</div>
+        <p class="texteGridPageAcc">
+          There are many variations of passages of Lorem Ipsum available, but
+          the majority have suffered alteration in some form, by injected
+          humour, or randomised words which don't look even slightly believable.
+          If you are going to use a passage of Lorem Ipsum, you need to be sure
+          there isn't anything embarrassing hidden in the middle of text. All
+          the Lorem Ipsum generators on the Internet tend to repeat predefined
+          chunks as necessary, making this the first true generator on the
+          Internet. It uses a dictionary of over 200 Latin words, combined with
+          a handful of model sentence structures, to generate Lorem Ipsum which
+          looks reasonable.
+        </p>
+      </section>
     </section>
+
+    <!----------------------FOOTER-------------------->
     <footer>
       <section class="sectionIcones">
         <img src="images/icons8-facebook.svg" class="icones" />
@@ -95,6 +146,7 @@
         Politique de confidentialité | Politique des cookies | Plan du site
       </div>
     </footer>
+    <!-- <script src="pageAccueil.js"></script> -->
     <script src="modal.js"></script>
   </body>
 </html>

@@ -15,6 +15,22 @@
     <title>Rucher de l'Estagnol - Contactez-nous</title>
   </head>
   <body>
+
+    <!------------------------MODAL---------------------->
+    <div id="back"></div>
+    <section class="d-none" id="modal">
+      <img src="./images/cross.svg" alt="" class="croix" />
+      <div class="titreModal">CONNEXION</div>
+      <form class="formModal">
+        <label>E-mail :</label>
+        <input type="text" name="emailConnexion" />
+        <label>Mot de passe :</label>
+        <input type="text" name="motDePasseConnexion" />
+        <button value="Connexion" class="boutonModal">Connexion</button>
+      </form>
+    </section>
+
+    <!------------------------NAV---------------------->
     <header>
       <nav>
         <a href="index.html">Accueil</a>
@@ -23,8 +39,10 @@
         <a class="logo"><img src="images/logo.png" class="logoNav" /></a>
         <a href="pageNotreHistoire.html">Notre Histoire</a>
         <a href="pageContact.html">Contact</a>
-        <a>Connexion</a>
+        <button class="boutonConnexion">Connexion</button>
       </nav>
+
+      <!----------------------SLIDE-------------------->
       <section class="slide">
         <div class="titres">
           <div class="contact">Nous contacter</div>
@@ -32,11 +50,31 @@
       </section>
     </header>    
 
-    <section class="">
-
-      
+    <!----------------------CORPS-------------------->
+    <section class="ouNousTrouver">
+      <div>Où nous trouver ?
+        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some </div>
+        <img src="images/map.png">      
     </section>
-
+    <section class="nosHorraires">
+      <div>Nos horraires</div>
+      <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some </p>
+      <div>10h - 19h </div>
+      <div>Du Lundi au Samedi </div>
+    </section>
+    <form class="formContact">
+      <label>Nom</label>
+      <input type="text"/>
+      <label>E mail</label>
+      <input  type="text"/>
+      <div>
+        <label>Message</label>
+        <textarea></textarea>
+        <button class="boutonContact">Envoyer</button>
+      </div>
+    </form>
+     
+     <!----------------------FOOTER-------------------->
     <footer>
       <section class="sectionIcones">
         <img src="images/icons8-facebook.svg" class="icones" />
@@ -55,5 +93,7 @@
         Politique de confidentialité | Politique des cookies | Plan du site
       </div>
     </footer>
+    <script src="pageAccueil.js"></script>
+    <script src="modal.js"></script>
   </body>
 </html>
