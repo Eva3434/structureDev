@@ -21,16 +21,17 @@ croixSelector.addEventListener("click", function () {
 
 let boutonInscription = document.querySelector(".boutonInscription");
 let modalInscSelector = document.querySelector("#modalInsc");
+let croixSelectorInsc = document.querySelector(".croixInsc");
 
 boutonInscription.addEventListener("click", function () {
   modalInscSelector.classList.remove("d-noneInsc");
-  modalInscSelector.classList.add("modal-template");
-  back.classList.add("modalBack");
+  modalInscSelector.classList.add("modal-templateInsc");
+  back.classList.add("modalBackInsc");
 });
 
-croixSelector.addEventListener("click", function () {
+croixSelectorInsc.addEventListener("click", function () {
   modalInscSelector.classList.add("d-noneInsc");
-  back.classList.remove("modalBack");
-  modalInscSelector.classList.remove("modal-template");
+  back.classList.remove("modalBackInsc");
+  modalInscSelector.classList.remove("modal-templateInsc");
 });
 

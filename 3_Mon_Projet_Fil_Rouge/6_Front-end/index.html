@@ -27,17 +27,17 @@
         <label>Mot de passe :</label>
         <input type="text" name="mot_de_passe_connexion" />
         <button value="Connexion" class="boutonModal">Connexion</button>
-        <a href="#incription" class="boutonInscription ">Créer un compte</a>
+        <p class="boutonInscription ">Créer un compte</p>
       </form>
     </section>
     
     <!------------------------MODAL INSCRIPTION--------------------->
-    <article id="inscsription">
-    <div id="back"></div>
+    <div id="backIns"></div>
     <section class="d-noneInsc" id="modalInsc">
-      <img src="./images/cross.svg" alt="" class="croix" />
+      <img src="./images/cross.svg" alt="" class="croixInsc" />
       <div class="titreModal">INSCRIPTION</div>
-      <form class="formIncription">
+      <form action='phpGestionInscription.php' class="formInscription" method="POST">
+        <input type='hidden' name="formInscription" value="1"/>
         <label>Nom :</label>
         <input type="text" name="nom_inscription" />
         <label>Prénom :</label>
@@ -46,10 +46,9 @@
         <input type="text" name="email_inscription" />
         <label>Mot de passe :</label>
         <input type="text" name="mot_de_passe_inscription" />
-        <button value="inscription" class="boutonModal">Créer le compte</button>
+        <input type="submit" value="Créer le compte" class="boutonModalInsc">
       </form>
     </section>
-  </article>
 
     <!------------------------NAV---------------------->
     <header>
