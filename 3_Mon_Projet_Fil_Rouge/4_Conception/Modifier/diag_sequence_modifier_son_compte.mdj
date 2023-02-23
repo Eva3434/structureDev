@@ -1502,7 +1502,7 @@
 													"top": 47,
 													"width": 113.28271484375,
 													"height": 13,
-													"text": "Principal Adjoint"
+													"text": "Utilisateur"
 												},
 												{
 													"_type": "LabelView",
@@ -1710,9 +1710,9 @@
 												"$ref": "AAAAAAGELiFDtYkoo8U="
 											},
 											"font": "Arial;13;0",
-											"left": 208,
+											"left": 198,
 											"top": 112,
-											"width": 171.2216796875,
+											"width": 190.74072265625,
 											"height": 13,
 											"alpha": 1.5707963267948966,
 											"distance": 10,
@@ -1720,7 +1720,7 @@
 												"$ref": "AAAAAAGELiFDtYj+hy8="
 											},
 											"edgePosition": 1,
-											"text": "1 : Clic sur modifier le compte"
+											"text": "1 : Cliquer sur modifier le compte"
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -2588,10 +2588,10 @@
 									},
 									"font": "Arial;13;0",
 									"left": 56,
-									"top": 864,
+									"top": 848,
 									"width": 424,
 									"height": 104,
-									"text": "(4) Scénario alternatif Les informations sont incorrectes\n4.1 Le SI informe le principal adjoint que les informations ne sont pas correctes.\n4.2 retour au point (2).\n4.3 Le principal adjoint saisi les informations\nDans le scénario nominal on considère que les données sont ok."
+									"text": "(4) Scénario alternatif Les informations sont incorrectes\n4.1 Le SI informe le principal adjoint que les informations ne sont pas correctes.\n4.2 retour au point (2).\n4.3 L'utilisateur saisi les informations\nDans le scénario nominal on considère que les données sont ok."
 								},
 								{
 									"_type": "UMLNoteView",
@@ -2600,11 +2600,11 @@
 										"$ref": "AAAAAAGELiFDtYjs83s="
 									},
 									"font": "Arial;13;0",
-									"left": 512,
-									"top": 856,
+									"left": 504,
+									"top": 912,
 									"width": 416,
 									"height": 57,
-									"text": "(9) Scénario d'erreur le compte n'existe pas\n9.1 Le SI informe le principal adjoint que le compte n'existe pas.\nLe scénario s'arrête à ce point."
+									"text": "(9) Scénario d'erreur le compte n'existe pas\n9.1 Le SI informe l'utilisateur que le compte n'existe pas.\nLe scénario s'arrête à ce point."
 								},
 								{
 									"_type": "UMLSeqLifelineView",
@@ -3295,9 +3295,9 @@
 												"$ref": "AAAAAAGELiFDtYkvVDY="
 											},
 											"font": "Arial;13;0",
-											"left": 199,
+											"left": 150,
 											"top": 772,
-											"width": 187.87158203125,
+											"width": 285.43505859375,
 											"height": 13,
 											"alpha": 1.5707963267948966,
 											"distance": 10,
@@ -3305,7 +3305,7 @@
 												"$ref": "AAAAAAGELiFDtYkhNHo="
 											},
 											"edgePosition": 1,
-											"text": "14 : Msg le compte à été modifié"
+											"text": "14 : Envoyer un message le compte à été modifié"
 										},
 										{
 											"_type": "EdgeLabelView",
@@ -3394,11 +3394,11 @@
 										"$ref": "AAAAAAGELiFDtYjs83s="
 									},
 									"font": "Arial;13;0",
-									"left": 512,
-									"top": 928,
+									"left": 504,
+									"top": 848,
 									"width": 416,
 									"height": 57,
-									"text": "(6) Scénario d'erreur la BDD ne répond pas\n1.1 Le SI informe le principal adjoint que la BDD ne répond pas.\nLe scénario s'arrête à ce point."
+									"text": "(6) Scénario d'erreur la BDD ne répond pas\n1.1 Le SI informe l'utilisateur que la BDD ne répond pas.\nLe scénario s'arrête à ce point."
 								},
 								{
 									"_type": "UMLNoteView",
@@ -3408,10 +3408,10 @@
 									},
 									"font": "Arial;13;0",
 									"left": 936,
-									"top": 936,
+									"top": 848,
 									"width": 416,
 									"height": 57,
-									"text": "(10) Scénario d'erreur la BDD ne répond pas\n10.1 Le SI informe le principal adjoint que la BDD ne répond pas.\nLe scénario s'arrête à ce point."
+									"text": "(10) Scénario d'erreur la BDD ne répond pas\n10.1 Le SI informe l'utilisateur que la BDD ne répond pas.\nLe scénario s'arrête à ce point."
 								},
 								{
 									"_type": "UMLNoteView",
@@ -3421,10 +3421,10 @@
 									},
 									"font": "Arial;13;0",
 									"left": 936,
-									"top": 864,
+									"top": 912,
 									"width": 416,
 									"height": 68,
-									"text": "(13) Scénario d'erreur enregistrement impossible\n13.1 Le SI informe le principal adjoint que on ne peux pas enregistrer.\nLe scénario s'arrête à ce point."
+									"text": "(13) Scénario d'erreur enregistrement impossible\n13.1 Le SI informe l'utilisateur que on ne peux pas enregistrer.\nLe scénario s'arrête à ce point."
 								}
 							]
 						}
@@ -3436,7 +3436,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGELiFDtYjrF30="
 							},
-							"name": "Clic sur modifier le compte",
+							"name": "Cliquer sur modifier le compte",
 							"source": {
 								"$ref": "AAAAAAGELiFDtYkw73E="
 							},
@@ -3621,7 +3621,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGELiFDtYjrF30="
 							},
-							"name": "Msg le compte à été modifié",
+							"name": "Envoyer un message le compte à été modifié",
 							"source": {
 								"$ref": "AAAAAAGELiFDtYkxoMY="
 							},
@@ -3638,7 +3638,7 @@
 							"_parent": {
 								"$ref": "AAAAAAGELiFDtYjrF30="
 							},
-							"name": "Principal Adjoint",
+							"name": "Utilisateur",
 							"represent": {
 								"$ref": "AAAAAAGELiFDtYkyk+w="
 							},
@@ -3678,8 +3678,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGELiFDtYjqgh0="
 					},
-					"name": "Role1",
-					"type": ""
+					"name": "Role1"
 				},
 				{
 					"_type": "UMLAttribute",

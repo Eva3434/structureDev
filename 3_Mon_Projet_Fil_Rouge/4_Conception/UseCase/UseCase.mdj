@@ -12222,6 +12222,7 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
+											"top": -16,
 											"height": 13
 										},
 										{
@@ -12232,7 +12233,7 @@
 											},
 											"font": "Arial;13;1",
 											"left": 229,
-											"top": 63,
+											"top": 55,
 											"width": 1174,
 											"height": 13,
 											"text": "Rucher de l'estagnol"
@@ -12245,6 +12246,7 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
+											"top": -16,
 											"width": 80.9072265625,
 											"height": 13,
 											"text": "(from Model1)"
@@ -12257,13 +12259,14 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
+											"top": -16,
 											"height": 13,
 											"horizontalAlignment": 1
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 224,
-									"top": 56,
+									"top": 48,
 									"width": 1184,
 									"height": 25,
 									"stereotypeLabel": {
@@ -12282,7 +12285,7 @@
 							],
 							"font": "Arial;13;0",
 							"left": 224,
-							"top": 56,
+							"top": 48,
 							"width": 1184,
 							"height": 1281,
 							"nameCompartment": {
@@ -12381,6 +12384,100 @@
 							},
 							"propertyLabel": {
 								"$ref": "AAAAAAGF7VVrJ4ceN08="
+							}
+						},
+						{
+							"_type": "UMLGeneralizationView",
+							"_id": "AAAAAAGGfWBQ+dZkW4Y=",
+							"_parent": {
+								"$ref": "AAAAAAGEUWIHwJSe97c="
+							},
+							"model": {
+								"$ref": "AAAAAAGGfWBQ+dZiATA="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGGfWBQ+dZl0L0=",
+									"_parent": {
+										"$ref": "AAAAAAGGfWBQ+dZkW4Y="
+									},
+									"model": {
+										"$ref": "AAAAAAGGfWBQ+dZiATA="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 799,
+									"top": 1369,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGGfWBQ+dZkW4Y="
+									},
+									"edgePosition": 1
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGGfWBQ+dZmRfk=",
+									"_parent": {
+										"$ref": "AAAAAAGGfWBQ+dZkW4Y="
+									},
+									"model": {
+										"$ref": "AAAAAAGGfWBQ+dZiATA="
+									},
+									"visible": null,
+									"font": "Arial;13;0",
+									"left": 799,
+									"top": 1384,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 30,
+									"hostEdge": {
+										"$ref": "AAAAAAGGfWBQ+dZkW4Y="
+									},
+									"edgePosition": 1
+								},
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGGfWBQ+dZnxBQ=",
+									"_parent": {
+										"$ref": "AAAAAAGGfWBQ+dZkW4Y="
+									},
+									"model": {
+										"$ref": "AAAAAAGGfWBQ+dZiATA="
+									},
+									"visible": false,
+									"font": "Arial;13;0",
+									"left": 800,
+									"top": 1339,
+									"height": 13,
+									"alpha": -1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGGfWBQ+dZkW4Y="
+									},
+									"edgePosition": 1
+								}
+							],
+							"font": "Arial;13;0",
+							"head": {
+								"$ref": "AAAAAAGEUWVubJTOqVE="
+							},
+							"tail": {
+								"$ref": "AAAAAAGEUWW8eZT5aO4="
+							},
+							"lineStyle": 1,
+							"points": "1522:744;1520:1360;80:1360;77:1104",
+							"showVisibility": true,
+							"nameLabel": {
+								"$ref": "AAAAAAGGfWBQ+dZl0L0="
+							},
+							"stereotypeLabel": {
+								"$ref": "AAAAAAGGfWBQ+dZmRfk="
+							},
+							"propertyLabel": {
+								"$ref": "AAAAAAGGfWBQ+dZnxBQ="
 							}
 						}
 					]
@@ -13099,6 +13196,19 @@
 								"reference": {
 									"$ref": "AAAAAAGEUWnagZYqc04="
 								}
+							}
+						},
+						{
+							"_type": "UMLGeneralization",
+							"_id": "AAAAAAGGfWBQ+dZiATA=",
+							"_parent": {
+								"$ref": "AAAAAAGEUWW8eZT3z5c="
+							},
+							"source": {
+								"$ref": "AAAAAAGEUWW8eZT3z5c="
+							},
+							"target": {
+								"$ref": "AAAAAAGEUWVubJTMJ5o="
 							}
 						}
 					]
